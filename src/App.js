@@ -47,6 +47,7 @@ const App = () => {
   useEffect(() => {
     console.log("Fetching images");
     fetchImages();
+    // eslint-disable-next-line
   }, [page]);
 
   useEffect(() => {
@@ -66,6 +67,7 @@ const App = () => {
       }
     });
     return () => window.removeEventListener("scroll", scrollEvent);
+    // eslint-disable-next-line
   }, []);
 
   const handleSubmit = (e) => {
